@@ -16,7 +16,12 @@ A simple AI-powered note-taking assistant using MCP and LangChain.
    pip install -r requirements.txt
 ```
 3. Create `.env` with your OpenRouter API key:
-OPENROUTER_API_KEY=your_key_here
+```python
+OPENROUTER_API_KEY = YOUR_KEY_HERE
+or
+Your_API_key_provider = YOUR_KEY_HERE
+```
+And change the ` api_key=os.getenv("Your_API_key_provider").strip()`
 
 4. Ensure `notes.json` exists:
 ```json
